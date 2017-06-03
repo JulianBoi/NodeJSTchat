@@ -15,3 +15,8 @@ Dans le cadre d'un TP sur le site **OpenClassroom** , j'ai réalisé un tchat av
 * Lancer git et faite ```git clone https://github.com/JulianBoi/NodeJSTchat``` (Téléchargement des fichiers sur **GitHub** )
     * Lancer Node JS (lien du téléchargement [ici](https://nodejs.org/))
 * Faire ``` npm install ``` pour installer les modules nodeJS et lancer le serveur app.js avec la commande ```node app.js```
+
+### Module utilisé
+* Express 3.3.4
+* Socket.io 1.2.1
+* ENT 0.1.0
