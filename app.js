@@ -14,6 +14,14 @@ app.get('/', function (req, res) {
 //Connection au serveur
 io.sockets.on('connection', function (socket, pseudo) {
     
+    //Stockage du pseudo de notre client sur le serveur
+    socket.on('nouveau_client', function(pseudo) {
+        pseudo = ent.encode(pseudo);
+        socket.pseudo = pseudo;
+        socket.broadcast.emit('nouveau_client', pseudo);
+    });
+    
+    
 });
 //Ecoute sur le port 8080
 server.listen(8080);
