@@ -4,3 +4,9 @@ var app = require('express')(),
     io = require('socket.io').listen(server),
     ent = require('ent'),
     fs = require('fs');
+
+
+// Redirection vers la page index
+app.get('/', function (req, res) {
+  res.sendfile(__dirname + '/index.html');
+});
