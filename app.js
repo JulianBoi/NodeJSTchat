@@ -10,3 +10,10 @@ var app = require('express')(),
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
+
+//Connection au serveur
+io.sockets.on('connection', function (socket, pseudo) {
+    
+});
+//Ecoute sur le port 8080
+server.listen(8080);
