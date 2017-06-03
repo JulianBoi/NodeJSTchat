@@ -47,7 +47,7 @@
         })
 
         // Transmission du message pour l'afficher quand le formulaire est envoyé.
-        $('#formulaire_chat').submit(function() {
+        $('#formulaire').submit(function() {
             var message = $('#message').val();
             socket.emit('message', message);
             insereMessage(pseudo, message); 
